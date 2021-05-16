@@ -16,4 +16,4 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
-        run: docker buildx build --push -t alinjie/elasticsearch --platform 'linux/arm/v7' .
+        run: docker buildx build --push -t alinjie/elasticsearch-armv7 --platform 'linux/arm/v7' .
