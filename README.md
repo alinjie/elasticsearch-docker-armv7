@@ -1,3 +1,3 @@
 # Elasticsearch Docker
 
-Elasticsearch docker image built specifically to support running on armv7
+Elasticsearch docker image built to support armv7
