@@ -18,6 +18,6 @@ jobs:
       - name: Build and push
         id: docker_build
         run: |
-          docker buildx build --push -t alinjie/elasticsearch --platform linux/arm/v7 .
+          docker buildx build --push -t alinjie/elasticsearch --platform linux/amd64,linux/arm/v7,linux/arm64 .
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
