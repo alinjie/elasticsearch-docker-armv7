@@ -15,7 +15,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         id: docker_build
-        uses: docker/build-push-action@v2
         run: |
           docker buildx build --push -t alinjie/elasticsearch --platform linux/arm/v7 .
       - name: Image digest
